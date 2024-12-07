@@ -27,6 +27,8 @@ def extract_keys_from_lines(file_content, line_numbers):
                  key, _ = line.split('=', 1)
                  keys.append(key.strip())
 
+    return keys
+
 if __name__ == "__main__":
     file_path = "live/global.ini"
 
