@@ -20,13 +20,13 @@ def extract_keys_from_lines(file_content, line_numbers):
     # Iterate through the given line numbers
     for line_number in line_numbers:
         line_number = line_number - 1
-         # Ensure the line number is within range
-         if 0 <= line_number < len(file_content) -1:
-             line = file_content[line_number].strip()
-             if '=' in line:
-                 # Extract the key from the line
-                 key, _ = line.split('=', 1)
-                 keys.append(key.strip())
+        # Ensure the line number is within range
+        if 0 <= line_number < len(file_content) -1:
+            line = file_content[line_number].strip()
+            if '=' in line:
+                # Extract the key from the line
+                key, _ = line.split('=', 1)
+                keys.append(key.strip())
 
     return keys
 
